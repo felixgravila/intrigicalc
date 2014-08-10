@@ -1,15 +1,18 @@
 package Service;
 
-import java.util.ArrayList;
-
+import java.util.List;
 import model.Intriga;
 import model.Person;
 
 public class Service {
 	
 	private static Service instance = null;
+	List<Person> people = DB.getInstance().getPersons();
+	Person peopleArr[] = new Person[people.size()+1];
 	
-	private Service(){		
+	private Service(){
+		if ( instance != null )
+			throw new AssertionError ( );
 	}
 	
 	public static Service getInstance(){
@@ -17,10 +20,6 @@ public class Service {
 			instance = new Service();
 		return instance;
 	}
-	
-	ArrayList<Person> people = DB.getInstance().getPersons();
-
-	Person peopleArr[] = new Person[people.size()+1];
 	
 	public Person[] getTheThing(){
 		if(back(1))

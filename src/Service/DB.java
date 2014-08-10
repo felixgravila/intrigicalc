@@ -24,6 +24,7 @@ public class DB {
 		Person p7 = new Person("George");
 		Person p8 = new Person("Nasuy");
 		Person p9 = new Person("Nicoara");
+		Person p10 = new Person ("Bratosin");
 		persons.add(p1);
 		persons.add(p2);
 		persons.add(p3);
@@ -33,10 +34,12 @@ public class DB {
 		persons.add(p7);
 		persons.add(p8);
 		persons.add(p9);
+		persons.add(p10);
 		intrigi.add(new Intriga(p1,p2));
 		intrigi.add(new Intriga(p2,p3));
 		intrigi.add(new Intriga(p2,p5));
 		intrigi.add(new Intriga(p7,p8));
+		intrigi.add(new Intriga(p9,p10));
 	}
 
 	public static DB getInstance(){

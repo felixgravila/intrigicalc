@@ -23,6 +23,7 @@ public class DB {
 		Person p6 = new Person("Adina");
 		Person p7 = new Person("George");
 		Person p8 = new Person("Nasuy");
+		Person p9 = new Person("Nicoara");
 		persons.add(p1);
 		persons.add(p2);
 		persons.add(p3);
@@ -31,6 +32,7 @@ public class DB {
 		persons.add(p6);
 		persons.add(p7);
 		persons.add(p8);
+		persons.add(p9);
 		intrigi.add(new Intriga(p1,p2));
 		intrigi.add(new Intriga(p2,p3));
 		intrigi.add(new Intriga(p2,p5));
